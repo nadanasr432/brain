@@ -1,0 +1,74 @@
+<!D<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <img class="image" src="img/image1.jpg">
+    <div class="form-main">
+        <div class="form-form">
+            <form action="http://localhost:5000/form" class="form" method="POST" enctype="multipart/form-data">
+                <div class="form-mb">
+                    <label for="guest" class="formlabel">
+                        patient's full name
+                    </label>
+                    <input type="text" name="fullName" placeholder="Full Name" class="formbold-form-input" />
+                </div>
+
+
+                <div class="flex flex-wrap formbold--mx-3">
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="form-mb">
+                            <label for="lName" class="formlabel"> Phone Number</label>
+                            <input class="formbold-form-input" name="phoneNumber" placeholder="Phone Number" />
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="form-mb">
+                            <label for="fName" class="formlabel"> patient's Age</label>
+                            <input class="formbold-form-input" name="age" type="number" placeholder="22" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap formbold--mx-3">
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="form-mb">
+                            <label for="lName" class="formlabel"> Date</label>
+                            <input class="formbold-form-input" name="date" type="date" />
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="form-mb">
+                            <label for="fName" class="formlabel"> patient's Chronic Disease</label>
+                            <input class="formbold-form-input" name="chronicDisease" type="text" placeholder="----------" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="flex form-mb">
+                    <p class="Gender">Gender</p>
+                    <div class="flex">
+                        <input class="formbold-radio" type="radio" name="gender" id="radioButton1" value="Male" />
+                        <label for="radioButton1" class="formbold-radio-label"> Male </label>
+                    </div>
+                    <div class="flex">
+                        <input class="formbold-radio" type="radio" name="gender" id="radioButton2" value="Female" />
+                        <label for="radioButton2" class="formbold-radio-label"> Female </label>
+                    </div>
+                    <input type="file" name="image" accept="image/*">
+                </div>
+
+                <div>
+                    <button class="formbold-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
